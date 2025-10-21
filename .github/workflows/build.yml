@@ -2,8 +2,8 @@ name: Build Mnemosyne Claude Desktop Extension
 
 on:
   push:
-    branches:
-      - main
+    tags:
+      - 'v*'
 
 jobs:
   build:
@@ -16,11 +16,10 @@ jobs:
           cache: 'npm'
       - run: npm install
       - run: npx @anthropic-ai/mcpb pack
-      - name: Create GitHub Release
-        id: create_release
-        uses: softprops/action-gh-release@v2
+      - uses: softprops/action-gh-release@v2
         with:
           files: mnemosyne.mcpb
           generate_release_notes: true
+          tag_name: ${{ github.ref_name }}
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
