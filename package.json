@@ -1,0 +1,19 @@
+{
+  "name": "mnemosyne",
+  "version": "0.0.1",
+  "description": "MCP desktop extension for registry and consume of data between AI instances",
+  "license": "MIT",
+  "author": "KevinMorales0",
+  "type": "module",
+  "main": "server/index.js",
+  "scripts": {
+    "start": "node server/index.js"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.0.4",
+    "tsx": "^4.20.6"
+  },
+  "devDependencies": {
+    "@types/node": "^24.9.1"
+  }
+}

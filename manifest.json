@@ -1,0 +1,47 @@
+{
+  "manifest_version": "0.2",
+  "name": "mnemosyne",
+  "display_name": "Mnemosyne",
+  "version": "0.0.1",
+  "description": "MCP desktop extension for registry and consume of data between AI instances",
+  "author": {
+    "name": "KevinMorales0",
+    "email": "0.kevin.morales.dev@gmail.com",
+    "url": "https://github.com/KevinMorales0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/KevinMorales0/mnemosyne"
+  },
+  "server": {
+    "type": "node",
+    "entry_point": "server/index.js",
+    "mcp_config": {
+      "command": "npx",
+      "args": ["tsx", "${__dirname}/server/index.ts"]
+    }
+  },
+  "tools": [
+    {
+      "name": "state_save",
+      "description": "Save the state of an AI instance"
+    },
+    {
+      "name": "state_get_latest",
+      "description": "Get the latest state of an AI instance"
+    },
+    {
+      "name": "states_get_latest",
+      "description": "Get the latest states of an AI instance"
+    }
+  ],
+  "tools_generated": false,
+  "license": "MIT",
+  "compatibility": {
+    "claude_desktop": ">=0.13.108",
+    "platforms": ["darwin", "win32", "linux"],
+    "runtimes": {
+      "node": ">=22.19.0"
+    }
+  }
+}
