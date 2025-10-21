@@ -2,8 +2,8 @@ name: Build Mnemosyne Claude Desktop Extension
 
 on:
   push:
-    tags:
-      - 'v*'
+    branches:
+      - main
 
 jobs:
   build:
