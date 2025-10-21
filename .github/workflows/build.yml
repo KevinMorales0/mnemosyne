@@ -16,7 +16,7 @@ jobs:
           node-version: '22.19.0'
           cache: 'npm'
       - run: npm install
-      - run: npx @anthropic-ai/mcpb pack -y
+      - run: npx @anthropic-ai/mcpb pack
       - uses: actions/upload-artifact@v4
         with:
           name: mnemosyne
