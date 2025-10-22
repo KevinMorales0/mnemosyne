@@ -2,7 +2,7 @@
   "manifest_version": "0.2",
   "name": "mnemosyne",
   "display_name": "Mnemosyne",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "MCP desktop extension for registry and consume of data between AI instances",
   "author": {
     "name": "KevinMorales0",
@@ -33,6 +33,42 @@
     {
       "name": "states_get_latest",
       "description": "Get the latest states of an AI instance"
+    },
+    {
+      "name": "agent_create",
+      "description": "Create an agent"
+    },
+    {
+      "name": "agent_get_status",
+      "description": "Get the status of an agent"
+    },
+    {
+      "name": "agents_get_details",
+      "description": "Get the details of all agents"
+    },
+    {
+      "name": "message_create",
+      "description": "Create a message"
+    },
+    {
+      "name": "message_get_by_id",
+      "description": "Get a message by ID"
+    },
+    {
+      "name": "message_get_latest_unreaded",
+      "description": "Get the latest unreaded message"
+    },
+    {
+      "name": "message_get_oldest_unreaded",
+      "description": "Get the oldest unreaded message"
+    },
+    {
+      "name": "messages_get_unreaded",
+      "description": "Get unreaded messages"
+    },
+    {
+      "name": "message_set_as_readed",
+      "description": "Set a message as readed"
     }
   ],
   "tools_generated": false,

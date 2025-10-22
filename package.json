@@ -1,6 +1,6 @@
 {
   "name": "mnemosyne",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "MCP desktop extension for registry and consume of data between AI instances",
   "license": "MIT",
   "author": "KevinMorales0",
